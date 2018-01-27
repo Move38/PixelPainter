@@ -40,6 +40,6 @@ void mousePressed() {
 }
 
 void mouseDragged() {
-  if(mouseX>=400) return;
+  if(mouseX >= width-20 || mouseX < 0 || mouseY >= height || mouseY < 0) return;
   pix[mouseX/20][mouseY/20] = curColor;
 }
