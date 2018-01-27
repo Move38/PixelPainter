@@ -1,4 +1,5 @@
 color pix[][] = new color[20][20];
+color curColor = color(255,0,0);
 
 void setup(){
   size(400,400);
@@ -14,10 +15,14 @@ void draw() {
   }
 }
 
+void setColor(color newColor) {
+  curColor = newColor;
+}
+
 void mousePressed() {
-  pix[mouseX/20][mouseY/20] = color(255,0,0);
+  pix[mouseX/20][mouseY/20] = curColor;
 }
 
 void mouseDragged() {
-  pix[mouseX/20][mouseY/20] = color(255,0,0);
+  pix[mouseX/20][mouseY/20] = curColor;
 }
