@@ -14,6 +14,10 @@ void draw() {
   }
 }
 
+void mousePressed() {
+  pix[mouseX/20][mouseY/20] = color(255,0,0);
+}
+
 void mouseDragged() {
   pix[mouseX/20][mouseY/20] = color(255,0,0);
 }
